@@ -7,12 +7,12 @@ const int Echo_Pin = A1;
 const int Max_Speed = 180;
 const int Max_Dist = 250;
 
-NewPing ultra_sonic(Trig_Pin, Echo_Pin, Max_Dist);
+NewPing ultra_sonic(Trig_Pin, Echo_Pin, Max_Dist); // Ultra sonic instance for manipulating the sensor
 
 AF_DCMotor motor2(2); // initialize motor2 on the M2 ports on the driver shield
 AF_DCMotor motor4(4); // initialize motor4 on the M4 ports on the driver shield
 
-Servo myservo;
+Servo myservo; // Servo instance for manipulating the servo motor
 
 int distance=250;
 int speedSet=0;
